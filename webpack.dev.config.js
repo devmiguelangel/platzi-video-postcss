@@ -1,31 +1,33 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: {
-    app: path.join(__dirname, './index.js'),
+    app: path.resolve(__dirname, './index.js'),
   },
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'js/[name].js',
   },
-  devServer: {
-    compress: true,
+  /* devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    // compress: true,
     port: 9000,
     stats: {
       colors: true,
     }
-  },
+  }, */
   module: {
     rules: [
       {
-        test: /\.js/,
+        test: /\.(js|jsx)$/,
         exclude: /(node_modules|bower_components)/,
-        use: [
-          {
-            loader: 'babel-loader'
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react']
           }
-        ]
+        }
       }
     ]
   },
