@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
 
-class Media extends PureComponent {
+class MediaComponent extends PureComponent {
   state = {
     author: this.props.author,
   }
@@ -30,11 +30,11 @@ class Media extends PureComponent {
   }
 }
 
-Media.propTypes = {
+MediaComponent.propTypes = {
   author: PropTypes.string.isRequired,
   cover: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   type: PropTypes.oneOf(['video', 'audio'])
 }
 
-export default Media;
+export default MediaComponent;
