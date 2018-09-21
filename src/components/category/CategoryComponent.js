@@ -1,14 +1,16 @@
 import React from 'react';
 import PlaylistComponent from './../playlist/PlaylistComponent';
 
+import './category.styl';
+
 
 const CategoryComponent = (props) => {
   const { title, description, playlist } = props;
 
   return (
     <div>
-      <h5>{title}</h5>
-      <h6>{description}</h6>
+      <p className="Category-title">{title}</p>
+      <p className="Category-description">{description}</p>
       <PlaylistComponent playlist={playlist} />
     </div>
   )

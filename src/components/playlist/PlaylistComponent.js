@@ -1,6 +1,8 @@
 import React from 'react';
 import MediaComponent from './MediaComponent';
 
+import './playlist.styl';
+
 
 const PlaylistComponent = (props) => {
   const { playlist } = props;
