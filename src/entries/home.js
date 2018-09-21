@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './../pages/containers/Home';
+import HomeContainer from './../containers/screen/HomeContainer';
 
-import './../../css/app.styl';
+import './../css/home.styl';
 
 
 const appContainer = document.getElementById('app');
 
 ReactDOM.render(
-  <Home />,
+  <HomeContainer />,
   appContainer
 );
