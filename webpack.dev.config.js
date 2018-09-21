@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   entry: {
-    app: path.resolve(__dirname, './index.js'),
+    home: path.resolve(__dirname, './src/js/entries/home'),
   },
   output: {
     path: path.resolve(__dirname, 'dist'),

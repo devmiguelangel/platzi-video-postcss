@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
 
-class Media extends Component {
+class Media extends PureComponent {
   state = {
     author: this.props.author,
   }
@@ -16,12 +16,12 @@ class Media extends Component {
 
   render() {
     const { author } = this.state;
-    const { title, image } = this.props;
+    const { title, cover } = this.props;
 
     return (
       <div className="Media" onClick={this.handleClick}>
         <div className="Media-cover">
-          <img src={image} alt="" width={260} height={160} className="Media-image" />
+          <img src={cover} alt="" width={260} height={160} className="Media-image" />
           <h3 className="Media-title">{title}</h3>
           <p className="Media-author">{author}</p>
         </div>
@@ -32,7 +32,7 @@ class Media extends Component {
 
 Media.propTypes = {
   author: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  cover: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   type: PropTypes.oneOf(['video', 'audio'])
 }
