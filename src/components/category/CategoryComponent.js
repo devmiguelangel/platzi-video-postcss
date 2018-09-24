@@ -11,7 +11,10 @@ const CategoryComponent = (props) => {
     <div>
       <p className="Category-title">{title}</p>
       <p className="Category-description">{description}</p>
-      <PlaylistComponent playlist={playlist} />
+      <PlaylistComponent
+        playlist={playlist}
+        handleVisibleModal={props.handleVisibleModal}
+      />
     </div>
   )
 }

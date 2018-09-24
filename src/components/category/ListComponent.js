@@ -12,7 +12,11 @@ const List = (props) => {
       {
         data.categories.map(item => {
           return (
-            <CategoryComponent key={item.id} {...item} />
+            <CategoryComponent
+              key={item.id}
+              {...item}
+              handleVisibleModal={props.handleVisibleModal}
+            />
           )
         })
       }

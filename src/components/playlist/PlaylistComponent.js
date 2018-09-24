@@ -17,6 +17,7 @@ const PlaylistComponent = (props) => {
               title={media.title}
               author={media.author}
               cover={media.cover}
+              handleVisibleModal={props.handleVisibleModal}
             />
           )
         })

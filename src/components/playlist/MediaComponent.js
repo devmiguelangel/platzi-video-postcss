@@ -6,14 +6,7 @@ import './media.styl';
 
 class MediaComponent extends PureComponent {
   state = {
-    author: this.props.author,
-  }
-
-  handleClick = (event) => {
-    // console.log(this.props.title);
-    this.setState({
-      author: 'Angel Miguel',
-    });
+    author: '',
   }
 
   render() {
@@ -21,7 +14,7 @@ class MediaComponent extends PureComponent {
     const { title, cover } = this.props;
 
     return (
-      <div className="Media" onClick={this.handleClick}>
+      <div className="Media" onClick={(event) => this.props.handleVisibleModal(event, true)}>
         <div className="Media-cover">
           <img src={cover} alt="" width={260} height={160} className="Media-image" />
           <h3 className="Media-title">{title}</h3>
