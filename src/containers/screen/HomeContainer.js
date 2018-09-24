@@ -4,6 +4,7 @@ import RelatedComponent from './../../components/screen/RelatedComponent';
 import CategoryListComponent from './../../components/category/ListComponent';
 import ModalContainer from './../widgets/ModalContainer';
 import ModalComponent from './../../components/widgets/ModalComponent';
+import ErrorContainer from './../error/ErrorContainer';
 
 
 export default class Home extends Component {
@@ -22,24 +23,26 @@ export default class Home extends Component {
     const { data } = this.props;
     
     return (
-      <LayoutComponent>
-        <RelatedComponent />
-        <CategoryListComponent
-          data={data}
-          handleVisibleModal={this.handleVisibleModal}
-        />
-        <ModalContainer>
-          {
-            modalVisible && (
-              <ModalComponent
-                handleVisibleModal={this.handleVisibleModal}
-              >
-                <h1>Portal Test!!!</h1>
-              </ModalComponent>
-            )
-          }
-        </ModalContainer>
-      </LayoutComponent>
+      <ErrorContainer>
+        <LayoutComponent>
+          <RelatedComponent />
+          <CategoryListComponent
+            data={data}
+            handleVisibleModal={this.handleVisibleModal}
+          />
+          <ModalContainer>
+            {
+              modalVisible && (
+                <ModalComponent
+                  handleVisibleModal={this.handleVisibleModal}
+                >
+                  <h1>Portal Test!!!</h1>
+                </ModalComponent>
+              )
+            }
+          </ModalContainer>
+        </LayoutComponent>
+      </ErrorContainer>
     )
   }
 }
