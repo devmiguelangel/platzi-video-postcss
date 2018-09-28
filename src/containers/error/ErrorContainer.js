@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import ErrorComponent from './../../components/error/ErrorComponent';
+import ErrorComponent from '../../components/error/ErrorComponent';
 
 
 export default class ErrorContainer extends Component {
@@ -10,14 +10,16 @@ export default class ErrorContainer extends Component {
   componentDidCatch = (error, info) => {
     this.setState({
       error: true,
-    })
+    });
   }
 
   render() {
-    if (this.state.error) {
+    const { error } = this.state;
+
+    if (error) {
       return (
         <ErrorComponent />
-      )
+      );
     }
     return (
       <Fragment>
