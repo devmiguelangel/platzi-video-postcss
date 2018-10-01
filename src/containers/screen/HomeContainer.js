@@ -44,7 +44,7 @@ class Home extends Component {
 }
 
 Home.propTypes = {
-  data: PropTypes.array.isRequired,
+  data: PropTypes.object.isRequired,
 };
 
 export default Home;
