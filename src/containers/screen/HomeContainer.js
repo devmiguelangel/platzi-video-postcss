@@ -6,21 +6,24 @@ import CategoryListComponent from '../../components/category/ListComponent';
 import ModalContainer from '../widgets/ModalContainer';
 import ModalComponent from '../../components/widgets/ModalComponent';
 import ErrorContainer from '../error/ErrorContainer';
+import VideoPlayerContainer from '../player/VideoPlayerContainer';
 
 
 class Home extends Component {
   state = {
     modalVisible: false,
+    media: {},
   };
 
-  handleVisibleModal = (event, visible) => {
+  handleVisibleModal = (event, visible, media) => {
     this.setState({
       modalVisible: visible,
+      media,
     });
   };
 
   render() {
-    const { modalVisible } = this.state;
+    const { modalVisible, media } = this.state;
     const { data } = this.props;
 
     return (
@@ -32,7 +35,7 @@ class Home extends Component {
             {
               modalVisible && (
                 <ModalComponent handleVisibleModal={this.handleVisibleModal}>
-                  <h1>Portal Test!!!</h1>
+                  <VideoPlayerContainer autoPlay src={media.src} title={media.title} />
                 </ModalComponent>
               )
             }

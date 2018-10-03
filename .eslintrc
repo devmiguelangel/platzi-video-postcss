@@ -11,6 +11,29 @@
         "checkContextTypes": false,
         "checkChildContextTypes": false
       }
+    ],
+    "jsx-a11y/media-has-caption": [
+      0,
+      {
+        "audio": ["Audio"],
+        "video": ["Video"],
+        "track": ["Track"]
+      }
+    ],
+    "react/button-has-type": [
+      0,
+      {
+        "button": true,
+        "submit": true,
+        "reset": true
+      }
+    ],
+    "react/destructuring-assignment": [
+      1,
+      "always",
+      {
+        "ignoreClassFields": true
+      }
     ]
   }
 }

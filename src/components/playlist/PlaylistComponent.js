@@ -10,17 +10,16 @@ const PlaylistComponent = (props) => {
   return (
     <div className="Playlist">
       {
-        playlist.map(media => {
-          return (
-            <MediaComponent
-              key={media.id}
-              title={media.title}
-              author={media.author}
-              cover={media.cover}
-              handleVisibleModal={props.handleVisibleModal}
-            />
-          )
-        })
+        playlist.map(media => (
+          <MediaComponent
+            key={media.id}
+            title={media.title}
+            author={media.author}
+            cover={media.cover}
+            src={media.src}
+            handleVisibleModal={props.handleVisibleModal}
+          />
+        ))
       }
     </div>
   )
