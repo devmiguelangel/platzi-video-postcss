@@ -1,4 +1,5 @@
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: 'development',
@@ -9,14 +10,6 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'js/[name].js',
   },
-  /* devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    // compress: true,
-    port: 9000,
-    stats: {
-      colors: true,
-    }
-  }, */
   module: {
     rules: [
       {
@@ -35,13 +28,23 @@ module.exports = {
         use: [
           'style-loader',
           'css-loader',
+          'postcss-loader',
         ],
       },
       {
         test: /\.styl$/,
         use: [
-          'style-loader',
+          // 'style-loader',
+          MiniCssExtractPlugin.loader,
           'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              config: {
+                path: './postcss.config.js',
+              },
+            },
+          },
           'stylus-loader',
         ],
       },
@@ -58,6 +61,12 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'css/[name].css',
+      chunkFilename: 'css/[id].css',
+    }),
+  ],
   stats: {
     colors: true,
   },
