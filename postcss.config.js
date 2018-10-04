@@ -3,5 +3,8 @@ module.exports = {
     'postcss-preset-env': {
       browsers: 'last 3 versions',
     },
+    autoprefixer: {
+      grid: true,
+    },
   },
 };
