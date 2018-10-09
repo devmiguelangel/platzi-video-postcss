@@ -287,4 +287,25 @@ body {
   font-weight: normal;
 }
 
-/*# sourceMappingURL=home.0e2b87578b7e1f46fb49.css.map*/
+@custom-media --extra-small (width < 480px);
+@custom-media --small (width < 768px);
+@custom-media --medium (width >= 768px);
+@custom-media --medium (width >= 1024px);
+
+@media (--small) {
+  .HomeLayout {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 150px;
+    grid-template-areas:
+      "primary"
+      "sidebar"
+      "featuring";
+  }
+}
+
+@media (--extra-small) {
+  body {
+    border: 3px solid lightgreen;
+  }
+}

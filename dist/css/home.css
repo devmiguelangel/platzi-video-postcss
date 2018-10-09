@@ -10,8 +10,6 @@ body {
 }
 
 .HomeLayout {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
   min-height: calc(50vh * 2);
@@ -36,16 +34,12 @@ body {
 }
 
 .Media:hover .Media-cover {
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .Media-cover {
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   height: 160px;
 }
 
@@ -106,16 +100,12 @@ body {
   border-radius: 10px;
   border: none;
   outline: 0;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
   transition: 0.2s;
-  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .Search-input:focus {
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .Categories {
@@ -135,8 +125,7 @@ body {
   background: #fff;
   padding: 20px;
   border-radius: 20px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 .Modal-close {
@@ -174,8 +163,6 @@ body {
 }
 
 .Video-control {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   background: rgba(0, 0, 0, 0.7);
@@ -198,8 +185,7 @@ body {
   background: transparent;
   outline: 0;
   width: inherit;
-  -webkit-box-sizing: none;
-          box-sizing: none;
+  box-sizing: none;
   font-size: 30px;
   cursor: pointer;
   padding: 0;
@@ -209,12 +195,8 @@ body {
   font-size: 14px;
   color: #fff;
   padding: 0 10px 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .Timer p {
@@ -222,15 +204,9 @@ body {
 }
 
 .ProgressBar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex: 1;
+  align-items: center;
 }
 
 .ProgressBar input {
@@ -243,15 +219,9 @@ body {
   bottom: 50px;
   left: 0;
   right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .Spinner span {
@@ -260,12 +230,8 @@ body {
 }
 
 .Volume {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 0 15px;
   border: none;
   background: transparent;
@@ -282,17 +248,13 @@ body {
 }
 
 .Volume:hover .Volume-range {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .Volume-range {
   -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
           transform: rotate(-90deg);
   -webkit-transform-origin: left bottom;
-      -ms-transform-origin: left bottom;
           transform-origin: left bottom;
   position: absolute;
   bottom: 50px;
@@ -305,11 +267,7 @@ body {
 }
 
 .FullScreen {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
   padding: 0 10px;
   cursor: pointer;
@@ -332,6 +290,24 @@ body {
   margin: 0;
   font-size: 16px;
   font-weight: normal;
+}
+
+@media (max-width: 767px) {
+  .HomeLayout {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 150px;
+    grid-template-areas:
+      "primary"
+      "sidebar"
+      "featuring";
+  }
+}
+
+@media (max-width: 479px) {
+  body {
+    border: 3px solid lightgreen;
+  }
 }
 
 
