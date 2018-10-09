@@ -22775,9 +22775,7 @@ __webpack_require__.r(__webpack_exports__);
 var RelatedComponent = function RelatedComponent() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "Related"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _images_logo_png__WEBPACK_IMPORTED_MODULE_1___default.a,
-    alt: "Logo",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "Logo"
   }));
 };

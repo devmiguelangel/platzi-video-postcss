@@ -7,9 +7,11 @@ import logo from '../../images/logo.png';
 const RelatedComponent = () => {
   return (
     <div className="Related">
-      <img src={logo} alt="Logo" className="Logo" />
+      <div className="Logo">
+        
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default RelatedComponent;
