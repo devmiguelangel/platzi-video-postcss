@@ -1,7 +1,7 @@
 import React from 'react';
 import MediaComponent from './MediaComponent';
 
-import './playlist.styl';
+// import './playlist.styl';
 
 
 const PlaylistComponent = (props) => {

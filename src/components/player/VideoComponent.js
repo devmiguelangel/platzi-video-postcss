@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-import './video.styl';
+// import './video.styl';
 
 
 export default class VideoComponent extends PureComponent {

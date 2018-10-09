@@ -8,6 +8,8 @@ import ModalComponent from '../../components/widgets/ModalComponent';
 import ErrorContainer from '../error/ErrorContainer';
 import VideoPlayerContainer from '../player/VideoPlayerContainer';
 
+import '../../css/home.css';
+
 
 class Home extends Component {
   state = {

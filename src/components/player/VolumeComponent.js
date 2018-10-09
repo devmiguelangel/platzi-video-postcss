@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import VolumeIcon from '../icon/volume';
 
-import './volume.styl';
+// import './volume.styl';
 
 const VolumeComponent = (props) => {
   const { volume, handleVolume } = props;

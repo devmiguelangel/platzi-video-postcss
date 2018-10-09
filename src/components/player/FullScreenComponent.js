@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import FullScreenIcon from '../icon/full-screen';
 
-import './full-screen.styl';
+// import './full-screen.styl';
 
 const FullScreenComponent = (props) => {
   const { handleFullScreen } = props;

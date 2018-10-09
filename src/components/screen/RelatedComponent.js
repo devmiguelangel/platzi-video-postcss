@@ -1,7 +1,7 @@
 import React from 'react';
 
-import './related.styl';
-import logo from './../../images/logo.png';
+// import './related.styl';
+import logo from '../../images/logo.png';
 
 
 const RelatedComponent = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './modal.styl';
+// import './modal.styl';
 
 const ModalComponent = (props) => {
   return (

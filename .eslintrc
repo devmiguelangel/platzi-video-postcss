@@ -1,13 +1,27 @@
 {
   "parser": "babel-eslint",
   "extends": "airbnb",
-  "plugins": ["react", "jsx-a11y", "import"],
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import"
+  ],
   "rules": {
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
     "react/forbid-prop-types": [
       1,
       {
-        "forbid": ["any"],
+        "forbid": [
+          "any"
+        ],
         "checkContextTypes": false,
         "checkChildContextTypes": false
       }
@@ -15,9 +29,15 @@
     "jsx-a11y/media-has-caption": [
       0,
       {
-        "audio": ["Audio"],
-        "video": ["Video"],
-        "track": ["Track"]
+        "audio": [
+          "Audio"
+        ],
+        "video": [
+          "Video"
+        ],
+        "track": [
+          "Track"
+        ]
       }
     ],
     "react/button-has-type": [
@@ -33,6 +53,14 @@
       "always",
       {
         "ignoreClassFields": true
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true,
+        "optionalDependencies": false,
+        "peerDependencies": false
       }
     ]
   }

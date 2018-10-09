@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import PlaylistComponent from '../playlist/PlaylistComponent';
 
-import './category.styl';
+// import './category.styl';
 
 
 const CategoryComponent = (props) => {

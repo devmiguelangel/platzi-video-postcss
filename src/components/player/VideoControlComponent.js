@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './video-control.styl';
+// import './video-control.styl';
 
 
 const VideoControlComponent = (props) => {

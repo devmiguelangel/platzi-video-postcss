@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import CategoryComponent from './CategoryComponent';
 import SearchContainer from '../../containers/widgets/SearchContainer';
 
-import './categories.styl';
+// import './categories.styl';
 
 
 const List = (props) => {

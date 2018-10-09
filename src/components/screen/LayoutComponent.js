@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './layout.styl';
+// import './layout.styl';
 
 
 const LayoutComponent = (props) => {

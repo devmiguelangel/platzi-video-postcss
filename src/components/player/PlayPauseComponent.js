@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import PlayComponent from '../icon/play';
 import PauseComponent from '../icon/pause';
 
-import './play-pause.styl';
+// import './play-pause.styl';
 
 
 const PlayPauseComponent = (props) => {

@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-import './media.styl';
+// import './media.styl';
 
 class MediaComponent extends PureComponent {
   state = {
