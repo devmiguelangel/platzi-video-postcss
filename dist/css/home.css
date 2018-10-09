@@ -14,11 +14,17 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  min-height: 100vh;
+  min-height: calc(50vh * 2);
 }
 
 .Related {
   width: 300px;
+}
+
+.Related .Logo {
+  display: block;
+  max-width: calc(100% - 20px);
+  margin: 0 auto;
 }
 
 .Media {

@@ -7,7 +7,7 @@ import logo from '../../images/logo.png';
 const RelatedComponent = () => {
   return (
     <div className="Related">
-      <img src={logo} alt="Logo" width={250} />
+      <img src={logo} alt="Logo" className="Logo" />
     </div>
   )
 }

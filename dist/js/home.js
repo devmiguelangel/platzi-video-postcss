@@ -22778,7 +22778,7 @@ var RelatedComponent = function RelatedComponent() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: _images_logo_png__WEBPACK_IMPORTED_MODULE_1___default.a,
     alt: "Logo",
-    width: 250
+    className: "Logo"
   }));
 };
 
