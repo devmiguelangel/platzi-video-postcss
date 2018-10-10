@@ -7,6 +7,7 @@ module.exports = {
           flexbox: false,
         },
         'custom-media-queries': {},
+        'color-functional-notation': {},
       },
     },
     /* autoprefixer: {
