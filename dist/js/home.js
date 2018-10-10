@@ -21976,7 +21976,30 @@ var List = function List(props) {
       handleVisibleModal = props.handleVisibleModal;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "Categories"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_containers_widgets_SearchContainer__WEBPACK_IMPORTED_MODULE_3__["default"], null), data.categories.map(function (item) {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_containers_widgets_SearchContainer__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "name",
+    className: "radio-label"
+  }, "Nombre", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "radio",
+    id: "name",
+    name: "filtro",
+    className: "radio"
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "type",
+    className: "radio-label"
+  }, "Tipo", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "radio",
+    id: "type",
+    className: "radio",
+    name: "filtro"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "destacados",
+    className: "checkbox-label"
+  }, "Ocultar", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "checkbox",
+    id: "destacados",
+    className: "checkbox"
+  })), data.categories.map(function (item) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CategoryComponent__WEBPACK_IMPORTED_MODULE_2__["default"], _extends({
       key: item.id
     }, item, {

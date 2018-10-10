@@ -36,6 +36,28 @@ body {
   background-position: center;
 }
 
+@custom-selector :--checkable .radio-label, .checkbox-label;
+
+@custom-selector :--highlight :hover, :active;
+
+:--checkable {
+  cursor: pointer;
+  user-select: none;
+  padding: 3px 7px;
+  border: 1px solid rgb(0 0 0 / 10%);
+  border-bottom: 3px solid red;
+  color: gray(30 / 100%);
+  font-size: 12px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+:--checkable:--highlight {
+  background: red;
+  color: white;
+}
+
 .Media {
   cursor: pointer;
   margin-right: 15px;

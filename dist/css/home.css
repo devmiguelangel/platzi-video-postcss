@@ -63,6 +63,27 @@ body {
   background-position: center;
 }
 
+.radio-label,.checkbox-label {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 3px 7px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid red;
+  color: rgb(70,70,70);
+  font-size: 12px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.radio-label:hover,.radio-label:active,.checkbox-label:hover,.checkbox-label:active {
+  background: red;
+  color: white;
+}
+
 .Media {
   cursor: pointer;
   margin-right: 15px;

@@ -12,6 +12,25 @@ const List = (props) => {
   return (
     <div className="Categories">
       <SearchContainer />
+      <p>
+        <span>
+          <label htmlFor="name" className="radio-label">
+            Nombre
+            <input type="radio" id="name" name="filtro" className="radio" />
+          </label>
+        </span>
+        <span>
+          <label htmlFor="type" className="radio-label">
+            Tipo
+            <input type="radio" id="type" className="radio" name="filtro" />
+          </label>
+        </span>
+      </p>
+
+      <label htmlFor="destacados" className="checkbox-label">
+        Ocultar
+        <input type="checkbox" id="destacados" className="checkbox" />
+      </label>
       {
         data.categories.map(item => (
           <CategoryComponent

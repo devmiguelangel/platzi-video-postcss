@@ -8,6 +8,7 @@ module.exports = {
         },
         'custom-media-queries': {},
         'color-functional-notation': {},
+        'custom-selectors': {},
       },
     },
     /* autoprefixer: {
