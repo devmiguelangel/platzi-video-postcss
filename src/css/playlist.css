@@ -1,0 +1,32 @@
+.Playlist {
+  overflow-x: auto;
+  white-space: nowrap;
+  overflow-y: hidden;
+  padding-bottom: 80px;
+}
+
+.Category {
+  margin-bottom: 1em;
+}
+
+.Category-title {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #3f546c;
+  margin: 0 0 20px 0;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.Category-description {
+  color: #888b8e;
+  font-weight: 300;
+  margin: 0;
+  font-size: 14px;
+}
+
+.Categories {
+  overflow: hidden;
+  padding: 20px 0 20px 20px;
+  background: #fff;
+}

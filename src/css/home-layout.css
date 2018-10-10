@@ -1,0 +1,50 @@
+.HomeLayout {
+  display: flex;
+  margin: 0 auto;
+  min-height: calc(50vh * 2);
+}
+
+@custom-selector :--checkable .radio-label, .checkbox-label;
+
+@custom-selector :--highlight :hover, :active;
+
+:--checkable {
+  cursor: pointer;
+  user-select: none;
+  padding: 3px 7px;
+  border: 1px solid rgb(0 0 0 / 10%);
+  border-bottom: 3px solid red;
+  color: gray(30 / 100%);
+  font-size: 12px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+:--checkable:--highlight {
+  background: red;
+  color: white;
+}
+
+@custom-media --extra-small (width < 480px);
+@custom-media --small (width < 768px);
+@custom-media --medium (width >= 768px);
+@custom-media --medium (width >= 1024px);
+
+@media (--small) {
+  .HomeLayout {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 150px;
+    grid-template-areas:
+      "primary"
+      "sidebar"
+      "featuring";
+  }
+}
+
+@media (--extra-small) {
+  body {
+    border: 3px solid lightgreen;
+  }
+}

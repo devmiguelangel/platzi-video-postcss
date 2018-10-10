@@ -1,0 +1,12 @@
+:root {
+  --main-bg-color: #171c30;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", system-ui;
+  background: var(--main-bg-color);
+  /* background: rgb(0 0 0 / 50%); */
+  /* background: #9d9c; */
+  /* background: gray(74 / 100%); */
+}

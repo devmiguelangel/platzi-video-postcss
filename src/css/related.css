@@ -1,0 +1,18 @@
+.Related {
+  width: 300px;
+}
+
+.Related .Logo {
+  display: block;
+  width: calc(100% - 20px);
+  height: 50px;
+  margin: 0 auto;
+  background-image: image-set(
+    url("../../src/images/platzi-video.png") 1x,
+    url("../../src/images/platzi-video-2x.png") 2x,
+    url("../../src/images/platzi-video-3x.png") 3x
+  );
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
